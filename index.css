@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+body{
+    background-color: #ffff;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.first_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffff;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+
+    .heading{
+        display: flex;
+        margin-top: 5px;
+        position: relative;
+        right: 139px;
+        font-weight: bolder;
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p{
+        font-weight:normal;
+        text-decoration: solid;
+    }
+
+}
+.second_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: grey;
+    padding: 30px;
+    position: relative;
+    bottom: 100px;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+
+    .heading{
+        background-color:rgb(245, 245, 16);
+        padding: 10px;
+        width: 290px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left:0;
+        border-radius: 10px;
+        position: relative;
+        left: 0;
+        font-weight: bolder;
+    }
+}
+.white_box{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    border-radius: 13px;
+    padding: 20px;
+    width: 40%;
+}
+@media  screen and (max-width:800px){
+    .first_box{
+        padding: 3px;
+        position: relative;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        .heading{
+            position:relative;
+            left: 0;
+        }
+    }
+    .second_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        .white_box{
+          justify-content: center;
+          align-items: center;
+          width: 90%;
+        }
+        .heading{
+            width: 60%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+        }
+    }
+    }
+    
+@media screen and (max-width:400px){
+    .second_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .white_box{
+            width: 100%;
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:290px){
+    .second_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items : center;
+
+        .white_box{
+            width: 100%;
+        }
+    }
+} 
