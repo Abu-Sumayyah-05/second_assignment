@@ -76,7 +76,7 @@ section{
 }
 @media  screen and (max-width:800px){
     .first_box{
-        padding: 3px;
+        /* padding: px; */
         position: relative;
         left: 0;
         align-items: center;
